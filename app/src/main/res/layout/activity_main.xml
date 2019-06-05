@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="@android:color/holo_red_light"
+            android:scrollbars="vertical"
+            android:id="@+id/recyclerView"
+            android:onClick="getActivity"/>
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/cardview_shadow_end_color"
+            android:elevation="15dp"
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="25dp"
+            android:popupElevation="3dp"
+            android:splitMotionEvents="true"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Randomize"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:onClick="randomizeBeer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/rectangle"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/randomizeCircle"/>
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/ic_priority_high_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="65dp"
+                android:layout_marginBottom="28dp"
+                android:layout_alignParentBottom="true"
+                />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Randomize"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:onClick="getMapActivity"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="170dp"
+            android:background="@drawable/rectangle"
+            android:src="@drawable/rectangle"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/mapCircle"/>
+
+
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/ic_place_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="175dp"
+            android:layout_marginBottom="28dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="getMapActivity"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

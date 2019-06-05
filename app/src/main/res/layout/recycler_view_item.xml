@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="3dp"
+    android:id="@+id/parentLayout"
+    android:onClick="getActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+        
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:id="@+id/descriptionTextView"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:id="@+id/rubleImageView"
+            />
+
+        <TextView
+            android:id="@+id/costTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:textSize="15sp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:src="@drawable/percent"
+            android:layout_toEndOf="@+id/costTextView"
+            android:layout_below="@+id/imageView"
+            android:id="@+id/percentImageView"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Percent"
+            android:layout_below="@id/imageView"
+            android:layout_toEndOf="@id/percentImageView"
+            android:id="@+id/percentTextView"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="Country"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/percentTextView"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/country"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/country"
+            android:numStars="5"
+            android:layout_marginLeft="15dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_marginTop="3dp"
+            android:id="@+id/ratingBar"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
